@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 21</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var text = prompt("Introduzca un texto: ");
+		text=text.toLowerCase().replace(/\s/g,"");
+		var invertedText="";
+		var x=text.length;
+		while(x>=0){
+			invertedText= invertedText + text.charAt(x);
+			x--;
+		}
+		if(invertedText==text){
+			document.write("El texto es un palíndromo.")
+		}else{
+			document.write("El texto no es un palíndromo.")
+		}
+
+	</script>
+	
+</body>
+</html>

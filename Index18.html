@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 18</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var text = prompt("Introduzca un texto: ");
+		var vocals = "aeiouAEIOU";
+		var counter=0;
+		var numberVocals=0;
+		while(counter!=text.length){
+			for(j=0;j<vocals.length;j++){
+				if(text.charAt(counter)==vocals.charAt(j)){
+					numberVocals++;
+					document.write(text.charAt(counter) + " ");
+				}
+			}
+			counter++;
+		}
+		document.write("<br>"+numberVocals);
+
+	</script>
+	
+</body>
+</html>

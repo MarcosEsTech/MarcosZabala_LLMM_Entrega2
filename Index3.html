@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 3</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var cadena ="";
+		var result ="";
+		while (result!=null){
+			result = prompt("Introduzca una palabra: ");
+			if(cadena==""){
+				cadena=result;
+			}else{
+				if(result!=null){
+					cadena = cadena + "-" + result;
+				}
+			}
+		}
+		document.write(cadena);
+
+	</script>
+	
+</body>
+</html>

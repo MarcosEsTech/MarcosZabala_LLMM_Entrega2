@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 14</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var quiniela = new Array(14);
+		
+		for(i=0;i<14;i++){
+			var value = Math.random()*2.5;
+
+			if(value<1){
+				quiniela[i]="X";
+			}else{
+				quiniela[i]=Math.round(value);
+			}
+		}
+		document.write(quiniela);
+
+	</script>
+	
+</body>
+</html>

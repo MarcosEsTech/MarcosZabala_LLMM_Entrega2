@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 28</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var prize = Number(prompt("Introduzca un precio: "));
+		var iva = Number(prompt("Introduzca el IVA: "));
+		if(iva>0){
+			document.write(prize+(prize*iva)/100);
+		}else{
+			document.write(prize+(prize*21)/100);
+		}
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 4</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var cadena=0;
+		var result=0;
+		while (result!=null){
+			result = prompt("Introduzca un número a sumar: ");
+			if(isNaN(result)){
+				alert("Introduzca un número, por favor.");
+			}else{
+				if(result!=null){
+					cadena = parseInt(cadena) + parseInt(result);
+				}
+			}
+		}
+		document.write(cadena);
+
+	</script>
+	
+</body>
+</html>

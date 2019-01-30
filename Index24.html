@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 24</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var counter = prompt("Introduzca el número de veces a hacer la serie de fibonacci: ")
+		if(counter>=1 && counter<=100){
+			var a=0;
+			var b=1;
+			var c=1;
+			while(counter>0){
+				document.write(c+ " ");
+				c=parseInt(a)+parseInt(b);
+				a=b;
+				b=c;
+				counter--;
+			}
+		}else{
+			alert("Número no válido.");
+		}
+
+	</script>
+	
+</body>
+</html>

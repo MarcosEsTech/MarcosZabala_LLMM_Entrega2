@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 30</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		max = Number(prompt("Introduzca el número máximo: "));
+		min = Number(prompt("Introduzca el número mínimo: "));
+
+		if(max==0){
+			max=100;
+		}
+		if(min==0){
+			min=1;
+		}
+
+		var numbers= Math.random()*max;
+
+		while(numbers<min){
+			numbers= Math.random()*max;
+		}
+		
+		document.write(numbers);
+		
+
+	</script>
+	
+</body>
+</html>

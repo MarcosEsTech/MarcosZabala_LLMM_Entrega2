@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 22</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var text = prompt("Introduzca un texto: ");
+		var vocals = "aeiouAEIOU";
+		var counter=0;
+		var checkVocals;
+		while(counter!=text.length){
+			for(j=0;j<vocals.length;j++){
+				if(text.charAt(counter)==vocals.charAt(j)){
+					checkVocals=true;
+				}
+			}
+			if(checkVocals){
+				document.write(text.charAt(counter));
+				break;
+			}
+			counter++;
+		}
+	</script>
+	
+</body>
+</html>

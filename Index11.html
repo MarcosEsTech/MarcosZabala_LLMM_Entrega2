@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 11</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var ages = new Array(3);
+		var names = new Array(3);
+		
+		for(i=0;i<3;i++){
+		 	ages[i] = prompt("Introduzca una edad: ");
+			names[i] = prompt("Introduzca un nombre: ");
+		}
+
+		alert(names[parseInt(ages.indexOf(String(Math.max.apply(Math,ages))))]);
+	</script>
+	
+</body>
+</html>

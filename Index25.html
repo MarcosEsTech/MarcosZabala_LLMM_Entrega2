@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 25</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var game;
+		var value = Math.random()*2.5;
+		var player = prompt("Escriba su elección: Piedra  Papel  Tijeras");
+
+		if(value<1){
+			game="Piedra";
+		}else{
+			if(value<2){
+				game="Papel";
+			}else{
+				game="Tijeras";
+			}
+		}
+
+		if(player==game){
+			document.write("Empate.")
+		}else{
+			if(player=="Tijeras"){
+				if(game=="Piedra"){
+					document.write("Pierdes.");
+				}else{
+					document.write("Ganaste.");
+				}
+			}else{
+				if(player=="Papel"){
+					if(game=="Piedra"){
+						document.write("Ganaste.");
+					}else{
+						document.write("Pierdes.");
+					}
+				}else{
+					if(game=="Tijeras"){
+						document.write("Ganaste.");
+					}else{
+						document.write("Pierdes.");
+					}
+				}
+			}
+		}
+
+	</script>
+	
+</body>
+</html>

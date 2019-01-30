@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 19</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var text = prompt("Introduzca un texto: ")
+		var write;
+		for(i=0;i<text.length;i++){
+			if(text.charAt(i)=="("){
+				write=true;
+			}
+			if(write){
+				if(text.charAt(i)==")"){
+					document.write(text.charAt(i));
+					write=false;
+				}else{
+					document.write(text.charAt(i));
+				}
+			}
+		}
+
+	</script>
+	
+</body>
+</html>
